@@ -1,0 +1,562 @@
+{
+  "@@locale": "en",
+  "english": "English",
+  "@english": {
+    "description": "Name of English language"
+  },
+  "defaultLanguage": "Default Language",
+  "@defaultLanguage": {
+    "description": "Label for default language option"
+  },
+  "french": "French",
+  "@french": {
+    "description": "Name of French language"
+  },
+  "frenchLanguage": "French Language",
+  "@frenchLanguage": {
+    "description": "Label for French language option"
+  },
+  "appTitle": "Area",
+  "@appTitle": {
+    "description": "Title of the app"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Label for settings option"
+  },
+  "account": "Account",
+  "@account": {
+    "description": "Label for account option"
+  },
+  "appSettings": "App Settings",
+  "@appSettings": {
+    "description": "Label for app settings option"
+  },
+  "support": "Support",
+  "@support": {
+    "description": "Label for support option"
+  },
+  "changePassword": "Change Password",
+  "@changePassword": {
+    "description": "Label for change password option"
+  },
+  "notificationPreferences": "Notification Preferences",
+  "@notificationPreferences": {
+    "description": "Label for notification preferences option"
+  },
+  "theme": "Theme",
+  "@theme": {
+    "description": "Label for theme option"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Label for language option"
+  },
+  "helpCenter": "Help Center",
+  "@helpCenter": {
+    "description": "Label for help center option"
+  },
+  "contactUs": "Contact Us",
+  "@contactUs": {
+    "description": "Label for contact us option"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Label for logout option"
+  },
+  "chooseTheme": "Choose Theme",
+  "@chooseTheme": {
+    "description": "Label for choose theme option"
+  },
+  "darkTheme": "Dark",
+  "@darkTheme": {
+    "description": "Label for dark theme option"
+  },
+  "lightTheme": "Light",
+  "@lightTheme": {
+    "description": "Label for light theme option"
+  },
+  "systemTheme": "System",
+  "@systemTheme": {
+    "description": "Label for system theme option"
+  },
+  "systemThemeDesc": "Follow system theme",
+  "@systemThemeDesc": {
+    "description": "Description for system theme"
+  },
+  "themeDesc": "Choose your preferred theme. The app will adjust its appearance based on your selection.",
+  "@themeDesc": {
+    "description": "Description for theme"
+  },
+  "lightThemeDesc": "Default light theme",
+  "@lightThemeDesc": {
+    "description": "Description for light theme"
+  },
+  "darkThemeDesc": "Default dark theme",
+  "@darkThemeDesc": {
+    "description": "Description for dark theme"
+  },
+  "chooseLanguage": "Choose Language",
+  "@chooseLanguage": {
+    "description": "Label for choose language option"
+  },
+  "languageDescription": "Choose your preferred language. The app will adjust its content based on your selection.",
+  "@languageDescription": {
+    "description": "Description for choose language option"
+  },
+  "featureNotAvailable": "Feature Not Available",
+  "@featureNotAvailable": {
+    "description": "Label for feature not available"
+  },
+  "featureComingSoon": "This feature is coming soon. Please check back later for updates.",
+  "@featureComingSoon": {
+    "description": "Description for feature coming soon"
+  },
+  "goBack": "Go Back",
+  "@goBack": {
+    "description": "Label for go back option"
+  },
+  "errorHelpCenter": "Could not open the help center page",
+  "@errorHelpCenter": {
+    "description": "Description for error help center"
+  },
+  "errorContactPage": "Could not open the contact page",
+  "@errorContactPage": {
+    "description": "Description for error contact page"
+  },
+  "welcomeTo": "Welcome to",
+  "@welcomeTo": {
+    "description": "Label for welcome to option"
+  },
+  "connectServices": "Connect Your Services",
+  "@connectServices": {
+    "description": "Label for connect your services option"
+  },
+  "connectServicesDesc": "Link your favorite platforms and make them work together seamlessly.",
+  "@connectServicesDesc": {
+    "description": "Description for connect your services option"
+  },
+  "createAutomations": "Create Automations",
+  "@createAutomations": {
+    "description": "Label for create automations option"
+  },
+  "createAutomationsDesc": "Build powerful workflows with simple triggers and actions.",
+  "@createAutomationsDesc": {
+    "description": "Description for create automations option"
+  },
+  "monitorActivity": "Monitor Activity",
+  "@monitorActivity": {
+    "description": "Label for monitor activity option"
+  },
+  "monitorActivityDesc": "Track your automations and stay updated on their performance.",
+  "@monitorActivityDesc": {
+    "description": "Description for monitor activity option"
+  },
+  "readyToStart": "Ready to get started?",
+  "@readyToStart": {
+    "description": "Label for ready to start option"
+  },
+  "gmailDiscordDesc": "Get Discord notifications for new Gmail messages",
+  "@gmailDiscordDesc": {
+    "description": "Description for Gmail to Discord notification"
+  },
+  "enable": "Enable",
+  "@enable": {
+    "description": "Label for enable option"
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Label for login option"
+  },
+  "register": "Register",
+  "@register": {
+    "description": "Label for register option"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Label for password option"
+  },
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {
+    "description": "Label for confirm password option"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Label for login with GitHub option"
+  },
+  "orRegisterWith": "- Or register with -",
+  "@orRegisterWith": {
+    "description": "Label for or login with option"
+  },
+  "orLoginWith": "- Or login with -",
+  "@orLoginWith": {
+    "description": "Label for or login with option"
+  },
+  "loginWithGoogle": "Login with Google",
+  "@loginWithGoogle": {
+    "description": "Label for login with Microsoft option"
+  },
+  "loginWithMicrosoft": "Login with Microsoft",
+  "@loginWithMicrosoft": {
+    "description": "Label for login with Microsoft option"
+  },
+  "loginWithDiscord": "Login with Discord",
+  "@loginWithDiscord": {
+    "description": "Label for login with Discord option"
+  },
+  "loginWithGitHub": "Login with GitHub",
+  "@loginWithGitHub": {
+    "description": "Label for login with GitHub option"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Label for email option"
+  },
+  "pleaseEnterEmail": "Please enter your email",
+  "@pleaseEnterEmail": {
+    "description": "Label for please enter your email option"
+  },
+  "pleaseEnterValidEmail": "Please enter a valid email",
+  "@pleaseEnterValidEmail": {
+    "description": "Label for please enter a valid email option"
+  },
+  "pleaseEnterPassword": "Please enter your password",
+  "@pleaseEnterPassword": {
+    "description": "Label for please enter your password option"
+  },
+  "pleaseConfirmPassword": "Please confirm your password",
+  "@pleaseConfirmPassword": {
+    "description": "Label for please confirm your password option"
+  },
+  "passwordsDoNotMatch": "Passwords do not match",
+  "@passwordsDoNotMatch": {
+    "description": "Label for passwords do not match option"
+  },
+  "registrationFailed": "Registration failed: {message}",
+  "@registrationFailed": {
+    "description": "Label for registration failed option",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "loginFailed": "Login failed: {error}",
+  "@loginFailed": {
+    "description": "Label for login failed option",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "anErrorOccurred": "An error occurred: {error}",
+  "@anErrorOccurred": {
+    "description": "Label for an error occurred option",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "featureNotAvailableDesc": "We apologize, but the change password feature is not available yet. We are working on implementing it soon.",
+  "@featureNotAvailableDesc": {
+    "description": "Description for feature not available"
+  },
+  "returnToSettings": "Return to Settings",
+  "@returnToSettings": {
+    "description": "Label for return to settings option"
+  },
+  "accountActions": "Account Actions",
+  "@accountActions": {
+    "description": "Label for account actions option"
+  },
+  "deleteAccount": "Delete Account",
+  "@deleteAccount": {
+    "description": "Label for delete account option"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Label for home option"
+  },
+  "readyToGetStarted": "Ready to get started?",
+  "@readyToGetStarted": {
+    "description": "Label for ready to get started option"
+  },
+  "readyToGetStartedDesc": "Discover our services and features to connect your first services and easily create automations.",
+  "@readyToGetStartedDesc": {
+    "description": "Description for ready to get started option"
+  },
+  "discoverMore": "Discover More",
+  "@discoverMore": {
+    "description": "Label for discover more option"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Label for profile option"
+  },
+  "connected": "Connected",
+  "@connected": {
+    "description": "Label for connected option"
+  },
+  "connect": "Connect",
+  "@connect": {
+    "description": "Label for connect option"
+  },
+  "connectedServices": "Connected Services",
+  "@connectedServices": {
+    "description": "Label for connected services option"
+  },
+  "google": "Google",
+  "@google": {
+    "description": "Label for google option"
+  },
+  "googleDesc": "Platform for services like Gmail",
+  "@googleDesc": {
+    "description": "Description for google option"
+  },
+  "googleFullDesc": "Google provides access to powerful services including Gmail for email management, Google Calendar for scheduling and reminders, Google Drive for file storage and sharing, Google Docs for document collaboration, Google Sheets for spreadsheets, Google Meet for video conferencing, and YouTube for video content. Connect your Google account to automate tasks across these services.",
+  "@googleFullDesc": {
+    "description": "Full description for google option"
+  },
+  "microsoft": "Microsoft",
+  "@microsoft": {
+    "description": "Label for microsoft option"
+  },
+  "microsoftDesc": "Platform for services like Outlook",
+  "@microsoftDesc": {
+    "description": "Description for microsoft option"
+  },
+  "microsoftFullDesc": "Microsoft provides access to powerful services including Outlook for email management, Microsoft Teams for communication and collaboration, Microsoft OneDrive for file storage and sharing, Microsoft 365 for document collaboration, Microsoft Excel for spreadsheets, Microsoft PowerPoint for presentations, and Microsoft Word for documents. Connect your Microsoft account to automate tasks across these services.",
+  "@microsoftFullDesc": {
+    "description": "Full description for microsoft option"
+  },
+  "discord": "Discord",
+  "@discord": {
+    "description": "Label for discord option"
+  },
+  "discordDesc": "Chat and communication platform",
+  "@discordDesc": {
+    "description": "Description for discord option"
+  },
+  "discordFullDesc": "Discord is a chat and communication platform that allows you to connect with friends and communities. It offers features like voice and video calls, text messaging, and file sharing.",
+  "@discordFullDesc": {
+    "description": "Full description for discord option"
+  },
+  "github": "GitHub",
+  "@github": {
+    "description": "Label for github option"
+  },
+  "githubDesc": "Code hosting platform",
+  "@githubDesc": {
+    "description": "Description for github option"
+  },
+  "githubFullDesc": "GitHub is a code hosting platform that allows you to manage your code and collaborate with others. It offers features like repositories, issues, and pull requests.",
+  "@githubFullDesc": {
+    "description": "Full description for github option"
+  },
+  "twitch": "Twitch",
+  "@twitch": {
+    "description": "Label for twitch option"
+  },
+  "twitchDesc": "Streaming platform",
+  "@twitchDesc": {
+    "description": "Description for twitch option"
+  },
+  "twitchFullDesc": "Twitch is a streaming platform that allows you to watch and interact with live video content. It offers features like live streaming, chat, and interactive features.",
+  "@twitchFullDesc": {
+    "description": "Full description for twitch option"
+  },
+  "all": "All",
+  "@all": {
+    "description": "Label for all option"
+  },
+  "applets": "Applets",
+  "@applets": {
+    "description": "Label for applets option"
+  },
+  "services": "Services",
+  "@services": {
+    "description": "Label for services option"
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Label for search option"
+  },
+  "discover": "Discover",
+  "@discover": {
+    "description": "Label for discover option"
+  },
+  "enableApplet": "Enable Applet",
+  "@enableApplet": {
+    "description": "Label for enable applet option"
+  },
+  "availableApplets": "Available Applets",
+  "@availableApplets": {
+    "description": "Label for available applets option"
+  },
+  "gmailToDiscordNotification": "Gmail to Discord Notification",
+  "@gmailToDiscordNotification": {
+    "description": "Label for gmail to discord notification option"
+  },
+  "gmailToDiscordNotificationDesc": "Get Discord notifications for new Gmail messages",
+  "@gmailToDiscordNotificationDesc": {
+    "description": "Description for gmail to discord notification option"
+  },
+  "discordWebhookUrl": "Discord Webhook URL",
+  "@discordWebhookUrl": {
+    "description": "Label for discord webhook url option"
+  },
+  "enterDiscordWebhook": "Please enter a Discord Webhook URL.",
+  "@enterDiscordWebhook": {
+    "description": "Label for enter discord webhook option"
+  },
+  "appletEnabled": "Applet enabled successfully!",
+  "@appletEnabled": {
+    "description": "Label for applet enabled successfully"
+  },
+  "appletEnableFailed": "Failed to enable applet.",
+  "@appletEnableFailed": {
+    "description": "Label for failed to enable applet"
+  },
+  "noTokenFound": "No token found. Please login.",
+  "@noTokenFound": {
+    "description": "Label for no token found"
+  },
+  "errorOccurred": "An error occurred.",
+  "@errorOccurred": {
+    "description": "Label for error occurred"
+  },
+  "gmailToDiscordNotificationTitle": "Gmail to Discord Notifications",
+  "@gmailToDiscordNotificationTitle": {
+    "description": "Label for gmail to discord notification title"
+  },
+  "gmailToDiscordNotificationFullDesc": "Get notified on Discord whenever you receive new emails in Gmail. Perfect for staying updated with important messages without checking your inbox.",
+  "@gmailToDiscordNotificationFullDesc": {
+    "description": "Description for gmail to discord notification"
+  },
+  "features": "Features",
+  "@features": {
+    "description": "Label for features option"
+  },
+  "requiredPermissions": "Required Permissions",
+  "@requiredPermissions": {
+    "description": "Label for required permissions option"
+  },
+  "privacyNotice": "We value your privacy. This service will only access the permissions listed above.",
+  "@privacyNotice": {
+    "description": "Description for privacy notice"
+  },
+  "areas": "AReas",
+  "@areas": {
+    "description": "Label for areas option"
+  },
+  "createApplet": "Create custom Applet (ARea)",
+  "@createApplet": {
+    "description": "Label for create custom applet (ARea) option"
+  },
+  "selectAction": "Select Action",
+  "@selectAction": {
+    "description": "Label for select action option"
+  },
+  "selectService": "Select Service",
+  "@selectService": {
+    "description": "Label for select service option"
+  },
+  "createArea": "Create Area",
+  "@createArea": {
+    "description": "Label for create area option"
+  },
+  "selectTrigger": "Select Trigger",
+  "@selectTrigger": {
+    "description": "Label for select trigger option"
+  },
+  "selectReaction": "Select Reaction",
+  "@selectReaction": {
+    "description": "Label for select reaction option"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Label for confirm option"
+  },
+  "availableServices": "Available Services",
+  "@availableServices": {
+    "description": "Label for available services option"
+  },
+  "configuration": "Configuration",
+  "@configuration": {
+    "description": "Label for configuration option"
+  },
+  "configureApplet": "Configure Applet",
+  "@configureApplet": {
+    "description": "Label for configure applet option"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Label for cancel option"
+  },
+  "enterValue": "Enter Value",
+  "@enterValue": {
+    "description": "Label for enter value option"
+  },
+  "invalidCredentials": "Invalid credentials",
+  "@invalidCredentials": {
+    "description": "Label for invalid credentials option"
+  },
+  "areaExplanationTitle": "What is an ARea?",
+  "@areaExplanationTitle": {
+    "description": "Label for area explanation title option"
+  },
+  "areaExplanationContent": "An ARea (Action-REAction) is a custom automation that connects different services together. When something happens in one service (Action), it triggers something else in another service (Reaction).",
+  "@areaExplanationContent": {
+    "description": "Description for area explanation content option"
+  },
+  "appletCreated": "Applet created successfully!",
+  "@appletCreated": {
+    "description": "Label for applet created successfully"
+  },
+  "errorCreatingApplet": "Failed to create applet.",
+  "@errorCreatingApplet": {
+    "description": "Label for error creating applet"
+  },
+  "appletNameRequired": "Applet name is required.",
+  "@appletNameRequired": {
+    "description": "Label for applet name required"
+  },
+  "enterAppletName": "Enter Applet Name",
+  "@enterAppletName": {
+    "description": "Label for enter applet name option"
+  },
+  "appletName": "Applet Name",
+  "@appletName": {
+    "description": "Label for applet name option"
+  },
+  "fieldRequired": "This field is required",
+  "@fieldRequired": {
+    "description": "Label for field required option"
+  },
+  "allFieldsRequired": "All fields are required",
+  "@allFieldsRequired": {
+    "description": "Label for all fields required option"
+  },
+  "appletDisabled": "Applet disabled successfully!",
+  "@appletDisabled": {
+    "description": "Label for applet disabled successfully"
+  },
+  "appletDisableFailed": "Failed to disable applet.",
+  "@appletDisableFailed": {
+    "description": "Label for failed to disable applet"
+  },
+  "disableApplet": "Disable Applet",
+  "@disableApplet": {
+    "description": "Label for disable applet option"
+  },
+  "missingConnections": "Missing Connections",
+  "@missingConnections": {
+    "description": "Label for missing connections option"
+  },
+  "pleaseConnect": "Please connect these services in your profile",
+  "@pleaseConnect": {
+    "description": "Label for please connect option"
+  }
+}

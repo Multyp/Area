@@ -1,0 +1,85 @@
+name: area
+description: "The future of automation."
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  # Core Flutter SDK
+  flutter:
+    sdk: flutter
+
+  # Google Fonts: A package to easily integrate Google Fonts into a Flutter app
+  google_fonts: ^4.0.0
+
+  # FontAwesome Flutter: Provides access to FontAwesome icons
+  font_awesome_flutter: ^10.1.0
+
+  # Flutter Localizations: Flutter's built-in package to support multiple languages and locales
+  flutter_localizations:
+    sdk: flutter
+
+  # Flutter SVG: Renders SVG (Scalable Vector Graphics) files in Flutter
+  flutter_svg: ^1.0.0
+
+  # WebView Flutter: Provides a WebView widget for displaying web content within a Flutter app
+  webview_flutter: ^4.0.0
+
+  # Flutter Secure Storage: A package to securely store key-value pairs using platform-specific secure storage mechanisms
+  flutter_secure_storage: ^9.2.2
+
+  # Flutter Dotenv: Allows using `.env` files to manage environment variables
+  flutter_dotenv: ^5.1.0
+
+  # Flutter Launcher Icons: Generates app launcher icons for Android and iOS
+  flutter_launcher_icons: ^0.14.1
+
+  # URL Launcher: A plugin to open URLs in the default browser or external apps
+  url_launcher: ^6.3.1
+
+  # HTTP: A package for making HTTP requests
+  http: ^1.2.0
+
+  # Crypto: Provides cryptographic hashing and encryption algorithms
+  crypto: ^3.0.1
+
+  # Shared Preferences: Wraps platform-specific persistent storage for simple data
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  mockito: ^5.4.4
+  build_runner: ^2.4.8
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - .env
+    - assets/images/background.jpg
+    - assets/images/background_light.jpg
+    - assets/images/logo.svg
+    - assets/images/icon.svg
+    - assets/icon/icon.png
+    - assets/icon/adaptative-icon.png
+    - assets/icon/lang/en.svg
+    - assets/icon/lang/fr.svg
+
+flutter_launcher_icons:
+  android: true
+  image_path_android: "assets/icon/icon.png"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/icon/adaptative-icon.png"

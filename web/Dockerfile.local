@@ -1,0 +1,23 @@
+# Utiliser l'image officielle de Node.js comme base
+FROM node:18
+
+# Définir le répertoire de travail
+WORKDIR /app
+
+# Copier les fichiers de configuration
+COPY package*.json ./
+COPY tsconfig.json ./
+COPY next.config.mjs ./
+COPY .eslintrc* ./
+
+# Copier le fichier .env
+COPY .env.local .env
+
+# Installer les dépendances
+RUN npm install
+
+# Exposer le port que l'application va utiliser
+EXPOSE 8081
+
+# Démarrer l'application
+CMD ["npm", "run", "dev"]

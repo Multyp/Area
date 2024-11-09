@@ -1,0 +1,562 @@
+{
+  "@@locale": "fr",
+  "english": "Anglais",
+  "@english": {
+    "description": "Nom de la langue anglaise"
+  },
+  "defaultLanguage": "Langue par défaut",
+  "@defaultLanguage": {
+    "description": "Label pour l'option langue par défaut"
+  },
+  "french": "Français",
+  "@french": {
+    "description": "Nom de la langue française"
+  },
+  "frenchLanguage": "Langue française",
+  "@frenchLanguage": {
+    "description": "Label pour l'option langue française"
+  },
+  "appTitle": "Area",
+  "@appTitle": {
+    "description": "Titre de l'application"
+  },
+  "settings": "Paramètres",
+  "@settings": {
+    "description": "Label pour l'option paramètres"
+  },
+  "chooseLanguage": "Choisir la langue",
+  "@chooseLanguage": {
+    "description": "Label pour l'option choisir la langue"
+  },
+  "account": "Compte",
+  "@account": {
+    "description": "Label pour l'option compte"
+  },
+  "appSettings": "Paramètres de l'application",
+  "@appSettings": {
+    "description": "Label pour l'option paramètres de l'application"
+  },
+  "support": "Support",
+  "@support": {
+    "description": "Label pour l'option support"
+  },
+  "changePassword": "Changer le mot de passe",
+  "@changePassword": {
+    "description": "Label pour l'option changer le mot de passe"
+  },
+  "notificationPreferences": "Préférences de notification",
+  "@notificationPreferences": {
+    "description": "Label pour l'option préférences de notification"
+  },
+  "theme": "Thème",
+  "@theme": {
+    "description": "Label pour l'option thème"
+  },
+  "language": "Langue",
+  "@language": {
+    "description": "Label pour l'option langue"
+  },
+  "helpCenter": "Centre d'aide",
+  "@helpCenter": {
+    "description": "Label pour l'option centre d'aide"
+  },
+  "contactUs": "Contactez-nous",
+  "@contactUs": {
+    "description": "Label pour l'option contactez-nous"
+  },
+  "logout": "Déconnexion",
+  "@logout": {
+    "description": "Label pour l'option déconnexion"
+  },
+  "chooseTheme": "Choisir le thème",
+  "@chooseTheme": {
+    "description": "Label pour l'option choisir le thème"
+  },
+  "darkTheme": "Sombre",
+  "@darkTheme": {
+    "description": "Label pour l'option thème sombre"
+  },
+  "lightTheme": "Clair",
+  "@lightTheme": {
+    "description": "Label pour l'option thème clair"
+  },
+  "lightThemeDesc": "Thème clair par défaut",
+  "@lightThemeDesc": {
+    "description": "Description pour le thème clair"
+  },
+  "systemTheme": "Système",
+  "@systemTheme": {
+    "description": "Label pour l'option thème système"
+  },
+  "systemThemeDesc": "Suivre le thème système",
+  "@systemThemeDesc": {
+    "description": "Description pour le thème système"
+  },
+  "darkThemeDesc": "Thème sombre par défaut",
+  "@darkThemeDesc": {
+    "description": "Description pour le thème sombre"
+  },
+  "themeDesc": "Choisissez votre thème préféré. L'application ajustera son contenu en fonction de votre sélection.",
+  "@themeDesc": {
+    "description": "Description pour le thème"
+  },
+  "languageDescription": "Choisissez votre langue préférée. L'application ajustera son contenu en fonction de votre sélection.",
+  "@languageDescription": {
+    "description": "Description pour l'option choisir la langue"
+  },
+  "featureNotAvailable": "Fonctionnalité non disponible",
+  "@featureNotAvailable": {
+    "description": "Label pour fonctionnalité non disponible"
+  },
+  "featureComingSoon": "Cette fonctionnalité arrive bientôt. Veuillez vérifier plus tard pour les mises à jour.",
+  "@featureComingSoon": {
+    "description": "Description pour fonctionnalité à venir"
+  },
+  "goBack": "Retour",
+  "@goBack": {
+    "description": "Label pour l'option retour"
+  },
+  "errorHelpCenter": "Impossible d'ouvrir la page du centre d'aide",
+  "@errorHelpCenter": {
+    "description": "Description pour l'erreur du centre d'aide"
+  },
+  "errorContactPage": "Impossible d'ouvrir la page de contact",
+  "@errorContactPage": {
+    "description": "Description pour l'erreur de la page de contact"
+  },
+  "welcomeTo": "Bienvenue sur",
+  "@welcomeTo": {
+    "description": "Label pour l'option bienvenue sur"
+  },
+  "connectServices": "Connectez vos services",
+  "@connectServices": {
+    "description": "Label pour l'option connecter vos services"
+  },
+  "connectServicesDesc": "Liez vos plateformes préférées et faites-les travailler ensemble de manière transparente.",
+  "@connectServicesDesc": {
+    "description": "Description pour l'option connecter vos services"
+  },
+  "createAutomations": "Créez des automatisations",
+  "@createAutomations": {
+    "description": "Label pour l'option créer des automatisations"
+  },
+  "createAutomationsDesc": "Construisez des flux de travail puissants avec des déclencheurs et des actions simples.",
+  "@createAutomationsDesc": {
+    "description": "Description pour l'option créer des automatisations"
+  },
+  "monitorActivity": "Surveillez l'activité",
+  "@monitorActivity": {
+    "description": "Label pour l'option surveiller l'activité"
+  },
+  "monitorActivityDesc": "Suivez vos automatisations et restez informé de leurs performances.",
+  "@monitorActivityDesc": {
+    "description": "Description pour l'option surveiller l'activité"
+  },
+  "readyToStart": "Prêt à commencer ?",
+  "@readyToStart": {
+    "description": "Label pour l'option prêt à commencer"
+  },
+  "gmailDiscordDesc": "Recevez des notifications Discord pour les nouveaux messages Gmail",
+  "@gmailDiscordDesc": {
+    "description": "Description pour la notification Gmail vers Discord"
+  },
+  "enable": "Activer",
+  "@enable": {
+    "description": "Label pour l'option activer"
+  },
+  "login": "Connexion",
+  "@login": {
+    "description": "Label pour l'option connexion"
+  },
+  "register": "S'inscrire",
+  "@register": {
+    "description": "Label pour l'option s'inscrire"
+  },
+  "password": "Mot de passe",
+  "@password": {
+    "description": "Label pour l'option mot de passe"
+  },
+  "confirmPassword": "Confirmer le mot de passe",
+  "@confirmPassword": {
+    "description": "Label pour l'option confirmer le mot de passe"
+  },
+  "back": "Retour",
+  "@back": {
+    "description": "Label pour l'option retour"
+  },
+  "orRegisterWith": "- Ou s'inscrire avec -",
+  "@orRegisterWith": {
+    "description": "Label pour l'option ou s'inscrire avec"
+  },
+  "orLoginWith": "- Ou se connecter avec -",
+  "@orLoginWith": {
+    "description": "Label pour l'option ou se connecter avec"
+  },
+  "loginWithGoogle": "Se connecter avec Google",
+  "@loginWithGoogle": {
+    "description": "Label pour l'option se connecter avec Google"
+  },
+  "loginWithMicrosoft": "Se connecter avec Microsoft",
+  "@loginWithMicrosoft": {
+    "description": "Label pour l'option se connecter avec Microsoft"
+  },
+  "loginWithDiscord": "Se connecter avec Discord",
+  "@loginWithDiscord": {
+    "description": "Label pour l'option se connecter avec Discord"
+  },
+  "loginWithGitHub": "Se connecter avec GitHub",
+  "@loginWithGitHub": {
+    "description": "Label pour l'option se connecter avec GitHub"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Label pour l'option email"
+  },
+  "pleaseEnterEmail": "Veuillez entrer votre email",
+  "@pleaseEnterEmail": {
+    "description": "Label pour l'option veuillez entrer votre email"
+  },
+  "pleaseEnterValidEmail": "Veuillez entrer un email valide",
+  "@pleaseEnterValidEmail": {
+    "description": "Label pour l'option veuillez entrer un email valide"
+  },
+  "pleaseEnterPassword": "Veuillez entrer votre mot de passe",
+  "@pleaseEnterPassword": {
+    "description": "Label pour l'option veuillez entrer votre mot de passe"
+  },
+  "pleaseConfirmPassword": "Veuillez confirmer votre mot de passe",
+  "@pleaseConfirmPassword": {
+    "description": "Label pour l'option veuillez confirmer votre mot de passe"
+  },
+  "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+  "@passwordsDoNotMatch": {
+    "description": "Label pour l'option les mots de passe ne correspondent pas"
+  },
+  "registrationFailed": "Échec de l'inscription : {message}",
+  "@registrationFailed": {
+    "description": "Label pour l'option échec de l'inscription",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "loginFailed": "Connexion échouée : {error}",
+  "@loginFailed": {
+    "description": "Label pour l'option connexion échouée",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "anErrorOccurred": "Une erreur s'est produite : {error}",
+  "@anErrorOccurred": {
+    "description": "Label pour l'option une erreur s'est produite",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "featureNotAvailableDesc": "Nous nous excusons, mais cette fonctionnalité n'est pas disponible pour le moment. Nous travaillons à l'implémenter dès que possible.",
+  "@featureNotAvailableDesc": {
+    "description": "Description pour une fonctionnalité non disponible"
+  },
+  "returnToSettings": "Retour aux paramètres",
+  "@returnToSettings": {
+    "description": "Label pour l'option retour aux paramètres"
+  },
+  "accountActions": "Actions du compte",
+  "@accountActions": {
+    "description": "Label pour l'option actions du compte"
+  },
+  "deleteAccount": "Supprimer le compte",
+  "@deleteAccount": {
+    "description": "Label pour l'option supprimer le compte"
+  },
+  "home": "Accueil",
+  "@home": {
+    "description": "Label pour l'option accueil"
+  },
+  "readyToGetStarted": "Prêt à commencer ?",
+  "@readyToGetStarted": {
+    "description": "Label pour l'option prêt à commencer"
+  },
+  "readyToGetStartedDesc": "Découvrez nos services et fonctionnalités pour vous connecter à votre première plateforme et créer des automatisations facilement.",
+  "@readyToGetStartedDesc": {
+    "description": "Description pour l'option prêt à commencer"
+  },
+  "discoverMore": "Découvrir plus",
+  "@discoverMore": {
+    "description": "Label pour l'option découvrir plus"
+  },
+  "profile": "Profil",
+  "@profile": {
+    "description": "Label pour l'option profil"
+  },
+  "connected": "Connecté",
+  "@connected": {
+    "description": "Label pour l'option connecté"
+  },
+  "connect": "Se connecter",
+  "@connect": {
+    "description": "Label pour l'option se connecter"
+  },
+  "google": "Google",
+  "@google": {
+    "description": "Label pour l'option google"
+  },
+  "googleDesc": "Plateforme pour les services comme Gmail",
+  "@googleDesc": {
+    "description": "Description pour l'option google"
+  },
+  "googleFullDesc": "Google fournit accès à des services puissants incluant Gmail pour la gestion des emails, Google Calendar pour la planification et les rappels, Google Drive pour le stockage et le partage de fichiers, Google Docs pour la collaboration sur des documents, Google Sheets pour les tableaux, Google Meet pour les conférences vidéo, et YouTube pour le contenu vidéo. Connectez votre compte Google pour automatiser les tâches sur ces services.",
+  "@googleFullDesc": {
+    "description": "Description complète pour l'option google"
+  },
+  "microsoft": "Microsoft",
+  "@microsoft": {
+    "description": "Label pour l'option microsoft"
+  },
+  "microsoftDesc": "Plateforme pour les services comme Outlook",
+  "@microsoftDesc": {
+    "description": "Description pour l'option microsoft"
+  },
+  "microsoftFullDesc": "Microsoft fournit accès à des services puissants incluant Outlook pour la gestion des emails, Microsoft Teams pour la communication et la collaboration, Microsoft OneDrive pour le stockage et le partage de fichiers, Microsoft 365 pour la collaboration sur des documents, Microsoft Excel pour les tableaux, Microsoft PowerPoint pour les présentations, et Microsoft Word pour les documents. Connectez votre compte Microsoft pour automatiser les tâches sur ces services.",
+  "@microsoftFullDesc": {
+    "description": "Description complète pour l'option microsoft"
+  },
+  "discord": "Discord",
+  "@discord": {
+    "description": "Label pour l'option discord"
+  },
+  "discordDesc": "Plateforme de chat et de communication",
+  "@discordDesc": {
+    "description": "Description pour l'option discord"
+  },
+  "discordFullDesc": "Discord est une plateforme de chat et de communication qui vous permet de vous connecter avec des amis et des communautés. Elle propose des fonctionnalités comme les appels vocaux et vidéo, le messaging texte, et le partage de fichiers.",
+  "@discordFullDesc": {
+    "description": "Description complète pour l'option discord"
+  },
+  "github": "GitHub",
+  "@github": {
+    "description": "Label pour l'option github"
+  },
+  "githubDesc": "Plateforme de gestion de code",
+  "@githubDesc": {
+    "description": "Description pour l'option github"
+  },
+  "githubFullDesc": "GitHub est une plateforme de gestion de code qui vous permet de gérer votre code et de collaborer avec d'autres personnes. Elle propose des fonctionnalités comme les dépôts, les problèmes et les demandes de pull.",
+  "@githubFullDesc": {
+    "description": "Description complète pour l'option github"
+  },
+  "twitch": "Twitch",
+  "@twitch": {
+    "description": "Label pour l'option twitch"
+  },
+  "twitchDesc": "Plateforme de streaming",
+  "@twitchDesc": {
+    "description": "Description pour l'option twitch"
+  },
+  "twitchFullDesc": "Twitch est une plateforme de streaming qui vous permet de regarder et d'interagir avec du contenu vidéo en direct. Elle propose des fonctionnalités comme le streaming en direct, le chat et les fonctionnalités interactives.",
+  "@twitchFullDesc": {
+    "description": "Description complète pour l'option twitch"
+  },
+  "all": "Tous",
+  "@all": {
+    "description": "Label pour l'option tous"
+  },
+  "applets": "Applets",
+  "@applets": {
+    "description": "Label pour l'option applets"
+  },
+  "services": "Services",
+  "@services": {
+    "description": "Label pour l'option services"
+  },
+  "connectedServices": "Services connectés",
+  "@connectedServices": {
+    "description": "Label pour l'option services connectés"
+  },
+  "search": "Rechercher",
+  "@search": {
+    "description": "Label pour l'option rechercher"
+  },
+  "discover": "Découvrir",
+  "@discover": {
+    "description": "Label pour l'option découvrir"
+  },
+  "enableApplet": "Activer l'applet",
+  "@enableApplet": {
+    "description": "Label pour l'option activer l'applet"
+  },
+  "availableApplets": "Applets disponibles",
+  "@availableApplets": {
+    "description": "Label pour l'option applets disponibles"
+  },
+  "gmailToDiscordNotification": "Notifications Gmail vers Discord",
+  "@gmailToDiscordNotification": {
+    "description": "Label pour l'option notifications Gmail vers Discord"
+  },
+  "gmailToDiscordNotificationDesc": "Recevez des notifications Discord pour les nouveaux messages Gmail",
+  "@gmailToDiscordNotificationDesc": {
+    "description": "Description pour l'option notifications Gmail vers Discord"
+  },
+  "discordWebhookUrl": "URL du webhook Discord",
+  "@discordWebhookUrl": {
+    "description": "Label pour l'option URL du webhook Discord"
+  },
+  "enterDiscordWebhook": "Veuillez entrer un URL de webhook Discord",
+  "@enterDiscordWebhook": {
+    "description": "Label pour l'option veuillez entrer un URL de webhook Discord"
+  },
+  "appletEnabled": "Applet activé avec succès !",
+  "@appletEnabled": {
+    "description": "Label pour l'option applet activé avec succès"
+  },
+  "appletEnableFailed": "Échec de l'activation de l'applet",
+  "@appletEnableFailed": {
+    "description": "Label pour l'option échec de l'activation de l'applet"
+  },
+  "noTokenFound": "Aucun token trouvé. Veuillez vous connecter.",
+  "@noTokenFound": {
+    "description": "Label pour l'option aucun token trouvé"
+  },
+  "errorOccurred": "Une erreur s'est produite.",
+  "@errorOccurred": {
+    "description": "Label pour l'option une erreur s'est produite"
+  },
+  "gmailToDiscordNotificationTitle": "Notifications Gmail vers Discord",
+  "@gmailToDiscordNotificationTitle": {
+    "description": "Label pour l'option notifications Gmail vers Discord"
+  },
+  "gmailToDiscordNotificationFullDesc": "Recevez des notifications Discord pour les nouveaux messages Gmail. Idéal pour rester à jour avec les messages importants sans vérifier votre boîte de réception.",
+  "@gmailToDiscordNotificationFullDesc": {
+    "description": "Description pour l'option notifications Gmail vers Discord"
+  },
+  "features": "Fonctionnalités",
+  "@features": {
+    "description": "Label pour l'option fonctionnalités"
+  },
+  "requiredPermissions": "Permissions requises",
+  "@requiredPermissions": {
+    "description": "Label pour l'option permissions requises"
+  },
+  "privacyNotice": "Nous valorisons votre vie privée. Ce service n'accédera qu'aux permissions listées ci-dessus.",
+  "@privacyNotice": {
+    "description": "Description pour la notice de confidentialité"
+  },
+  "areas": "AReas",
+  "@areas": {
+    "description": "Label pour l'option zones"
+  },
+  "createApplet": "Créer un applet personnalisé (ARea)",
+  "@createApplet": {
+    "description": "Label pour l'option créer un applet personnalisé (ARea)"
+  },
+  "selectAction": "Sélectionner une action",
+  "@selectAction": {
+    "description": "Label pour l'option sélectionner une action"
+  },
+  "selectService": "Sélectionner un service",
+  "@selectService": {
+    "description": "Label pour l'option sélectionner un service"
+  },
+  "createArea": "Créer une zone",
+  "@createArea": {
+    "description": "Label pour l'option créer une zone"
+  },
+  "selectTrigger": "Sélectionner un déclencheur",
+  "@selectTrigger": {
+    "description": "Label pour l'option sélectionner un déclencheur"
+  },
+  "selectReaction": "Sélectionner une réaction",
+  "@selectReaction": {
+    "description": "Label pour l'option sélectionner une réaction"
+  },
+  "confirm": "Confirmer",
+  "@confirm": {
+    "description": "Label pour l'option confirmer"
+  },
+  "availableServices": "Services disponibles",
+  "@availableServices": {
+    "description": "Label pour l'option services disponibles"
+  },
+  "configuration": "Configuration",
+  "@configuration": {
+    "description": "Label pour l'option configuration"
+  },
+  "configureApplet": "Configurer l'applet",
+  "@configureApplet": {
+    "description": "Label pour l'option configurer l'applet"
+  },
+  "cancel": "Annuler",
+  "@cancel": {
+    "description": "Label pour l'option annuler"
+  },
+  "enterValue": "Entrer une valeur",
+  "@enterValue": {
+    "description": "Label pour l'option entrer une valeur"
+  },
+  "invalidCredentials": "Identifiants invalides",
+  "@invalidCredentials": {
+    "description": "Label pour l'option identifiants invalides"
+  },
+  "areaExplanationTitle": "Qu'est-ce qu'une ARea ?",
+  "@areaExplanationTitle": {
+    "description": "Label pour l'option qu'est-ce qu'une ARea ?"
+  },
+  "areaExplanationContent": "Une ARea (Action-REAction) est une automatisation personnalisée qui connecte différents services ensemble. Quand quelque chose se passe dans un service (Action), il déclenche quelque chose dans un autre service (Reaction).",
+  "@areaExplanationContent": {
+    "description": "Description pour l'option qu'est-ce qu'une ARea ?"
+  },
+  "appletCreated": "Applet créé avec succès !",
+  "@appletCreated": {
+    "description": "Label pour l'option applet créé avec succès"
+  },
+  "errorCreatingApplet": "Échec de la création de l'applet",
+  "@errorCreatingApplet": {
+    "description": "Label pour l'option échec de la création de l'applet"
+  },
+  "appletNameRequired": "Le nom de l'applet est requis.",
+  "@appletNameRequired": {
+    "description": "Label pour l'option nom de l'applet requis"
+  },
+  "enterAppletName": "Entrer le nom de l'applet",
+  "@enterAppletName": {
+    "description": "Label pour l'option entrer le nom de l'applet"
+  },
+  "appletName": "Nom de l'applet",
+  "@appletName": {
+    "description": "Label pour l'option nom de l'applet"
+  },
+  "fieldRequired": "Ce champ est requis",
+  "@fieldRequired": {
+    "description": "Label pour l'option champ requis"
+  },
+  "allFieldsRequired": "Tous les champs sont requis",
+  "@allFieldsRequired": {
+    "description": "Label pour l'option tous les champs requis"
+  },
+  "appletDisabled": "Applet désactivé avec succès !",
+  "@appletDisabled": {
+    "description": "Label pour l'option applet désactivé avec succès"
+  },
+  "appletDisableFailed": "Échec de la désactivation de l'applet",
+  "@appletDisableFailed": {
+    "description": "Label pour l'option échec de la désactivation de l'applet"
+  },
+  "disableApplet": "Désactiver l'applet",
+  "@disableApplet": {
+    "description": "Label pour l'option désactiver l'applet"
+  },
+  "missingConnections": "Connections manquantes",
+  "@missingConnections": {
+    "description": "Label pour l'option connections manquantes"
+  },
+  "pleaseConnect": "Veuillez connecter ces services sur votre profil",
+  "@pleaseConnect": {
+    "description": "Label pour l'option veuillez vous connecter"
+  }
+}

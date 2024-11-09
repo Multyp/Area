@@ -1,0 +1,11 @@
+{
+  "position": 1,
+  "label": "Dictionnary",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Dictionnary"
+  }
+}
