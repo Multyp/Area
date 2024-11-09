@@ -67,23 +67,16 @@ jobs:
           git config --global user.email 'actions@github.com'
           git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: Create new branch
+      - name: Commit and push changes
         run: |
-          git checkout -b update-client-apk-$(date +%Y%m%d%H%M%S)
           git add web/public/client.apk
           git commit -m "Update client.apk from CI build" || echo "No changes to commit"
-
-      - name: Push changes to new branch
-        run: |
-          git push origin HEAD
+          git push
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+      - name: Upload APK as an artifact (optional)
+        uses: actions/upload-artifact@v3
         with:
-          token: ${{ secrets.PAT_TOKEN }}
-          commit-message: "Update client.apk from CI build"
-          branch: update-client-apk
-          title: "Automated Update of client.apk"
-          body: "This PR was automatically created by GitHub Actions to update the client APK."
+          name: client-apk
+          path: web/public/client.apk
