@@ -31,7 +31,7 @@ class GitHubOAuthWebViewState extends State<GitHubOAuthWebView> {
   final storageService = StorageService();
 
   /// GitHub client ID for OAuth.
-  final String? clientId = dotenv.env['GITHUB_CLIENT_ID'];
+  final String? clientId = dotenv.env['CLIENT_ID_GITHUB'];
 
   @override
   void initState() {
