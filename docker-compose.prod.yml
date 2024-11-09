@@ -58,15 +58,15 @@ services:
     networks:
       - mynet
 
-  mobile:
-    image: mobile
-    build:
-      context: ./mobile/
-      dockerfile: Dockerfile
-    volumes:
-      - shared_volume:/app/public/mobile
-    networks:
-      - mynet
+  # mobile:
+  #   image: mobile
+  #   build:
+  #     context: ./mobile/
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - shared_volume:/app/public/mobile
+  #   networks:
+  #     - mynet
 
   dev-server-prod:
     image: dev-server-prod

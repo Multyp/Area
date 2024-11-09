@@ -1,0 +1,40 @@
+name: Build Flutter APK
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.3.0'
+
+      - name: Install dependencies
+        run: flutter pub get
+        working-directory: ./mobile
+
+      - name: Build APK
+        run: flutter build apk --release
+        working-directory: mobile
+
+      - name: Copy APK to /public
+        run: |
+          cp mobile/build/app/outputs/flutter-apk/app-release.apk web/public/client.apk
+
+      - name: Upload APK as an artifact (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: client-apk
+          path: web/public/client.apk
