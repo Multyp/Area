@@ -56,7 +56,7 @@ jobs:
         run: flutter build apk --release
         working-directory: mobile
 
-      - name: Copy APK to /public
+      - name: Copy APK to public folder
         run: |
           mkdir -p web/public
           cp mobile/build/app/outputs/flutter-apk/app-release.apk web/public/client.apk
@@ -67,23 +67,23 @@ jobs:
           git config --global user.email 'actions@github.com'
           git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: Create new branch
+      - name: Switch to apk-storage branch or create it
         run: |
-          git checkout -b update-client-apk-$(date +%Y%m%d%H%M%S)
-          git add web/public/client.apk
+          if git ls-remote --exit-code --heads origin apk-storage; then
+            git fetch origin apk-storage
+            git checkout apk-storage
+            git pull origin apk-storage
+          else
+            git checkout --orphan apk-storage
+            git rm -rf .
+          fi
+          mkdir -p public
+          cp web/public/client.apk public/
+          git add public/client.apk
           git commit -m "Update client.apk from CI build" || echo "No changes to commit"
 
-      - name: Push changes to new branch
+      - name: Push APK to apk-storage branch
         run: |
-          git push origin HEAD
+          git push origin apk-storage
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
-          commit-message: "Update client.apk from CI build"
-          branch: update-client-apk
-          title: "Automated Update of client.apk"
-          body: "This PR was automatically created by GitHub Actions to update the client APK."
