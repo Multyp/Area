@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build-apk:
@@ -59,28 +56,27 @@ jobs:
         run: flutter build apk --release
         working-directory: mobile
 
+      - name: Copy APK to /public
+        run: |
+          mkdir -p web/public
+          cp mobile/build/app/outputs/flutter-apk/app-release.apk web/public/client.apk
+
       - name: Configure Git
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
           git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: Switch to apk-storage branch or create it
+      - name: Commit and push changes
         run: |
-          if git ls-remote --exit-code --heads origin apk-storage; then
-            git fetch origin apk-storage
-            git checkout apk-storage
-            git pull origin apk-storage
-          else
-            git checkout --orphan apk-storage
-            git rm -rf .
-          fi
-          cp mobile/build/app/outputs/flutter-apk/app-release.apk client.apk
-          git add client.apk
+          git add web/public/client.apk
           git commit -m "Update client.apk from CI build" || echo "No changes to commit"
-
-      - name: Push APK to apk-storage branch
-        run: |
-          git push origin apk-storage
+          git push
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+      - name: Upload APK as an artifact (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: client-apk
+          path: web/public/client.apk
