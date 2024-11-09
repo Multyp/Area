@@ -1,0 +1,70 @@
+name: Build Flutter APK
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    env:
+      CLIENT_ID_GITHUB: ${{ secrets.CLIENT_ID_GITHUB }}
+      DISCORD_CLIENT_ID: ${{ secrets.DISCORD_CLIENT_ID }}
+      MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
+      MICROSOFT_TENANT_ID: ${{ secrets.MICROSOFT_TENANT_ID }}
+      API_BASE_URL: ${{ secrets.API_BASE_URL }}
+      LOCAL_API_BASE_URL: ${{ secrets.LOCAL_API_BASE_URL }}
+      GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+      GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+      TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.4'
+
+      - name: Install dependencies
+        run: flutter pub get
+        working-directory: ./mobile
+
+      - name: Create .env file
+        run: |
+          cat > mobile/.env << EOF
+          CLIENT_ID_GITHUB=${{ secrets.CLIENT_ID_GITHUB }}
+          DISCORD_CLIENT_ID=${{ secrets.DISCORD_CLIENT_ID }}
+          MICROSOFT_CLIENT_ID=${{ secrets.MICROSOFT_CLIENT_ID }}
+          MICROSOFT_TENANT_ID=${{ secrets.MICROSOFT_TENANT_ID }}
+          API_BASE_URL=${{ secrets.API_BASE_URL }}
+          LOCAL_API_BASE_URL=${{ secrets.LOCAL_API_BASE_URL }}
+          GOOGLE_CLIENT_ID=${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET=${{ secrets.GOOGLE_CLIENT_SECRET }}
+          TWITCH_CLIENT_ID=${{ secrets.TWITCH_CLIENT_ID }}
+          EOF
+
+      - name: Build APK
+        run: flutter build apk --release
+        working-directory: mobile
+
+      - name: Copy APK to /public
+        run: |
+          cp mobile/build/app/outputs/flutter-apk/app-release.apk web/public/client.apk
+
+      - name: Upload APK as an artifact (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: client-apk
+          path: web/public/client.apk
