@@ -72,6 +72,12 @@ const config: Config = {
           label: 'Docs',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'apiDocsSidebar',
+          position: 'left',
+          label: 'API',
+        },
+        {
           href: 'https://github.com/LesRooters',
           label: 'GitHub',
           position: 'right',
@@ -86,7 +92,7 @@ const config: Config = {
           items: [
             {
               label: 'Intro',
-              to: '/docs/intro',
+              to: '/docs/home/intro',
             },
           ],
         },
