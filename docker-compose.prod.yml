@@ -78,6 +78,16 @@ services:
       - "8083:8083"
     networks:
       - mynet
+  
+  docs:
+    build:
+      context: ./docs-area
+      dockerfile: dockerfile
+    restart: always
+    ports:
+      - "8084:8084"
+    networks:
+      - mynet
 
 networks:
   mynet:
