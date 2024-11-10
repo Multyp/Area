@@ -26,7 +26,7 @@ services:
       - /app/node_modules
     restart: always
     ports:
-    - 8080:8080
+    - 8081:8081
     depends_on:
       - db
     networks:
@@ -43,7 +43,7 @@ services:
       - shared_volume:/app/public/mobile
     restart: always
     ports:
-      - 8081:8081
+      - 8082:8082
     networks:
       - mynet
     #depends_on:

@@ -108,8 +108,8 @@ npm run start
 ## 🐳 Docker Deployment
 
 The project uses Docker Compose for deployment. Main services:
-- `server`: Application server (Port 8080)
-- `client_web`: Web client (Port 8081)
+- `server`: Application server (Port 8081)
+- `client_web`: Web client (Port 8082)
 - `client_mobile`: Mobile client builder
 
 To start all services:
@@ -125,7 +125,7 @@ cd mobile
 make build-apk
 ```
 
-The APK will be available at `http://localhost:8081/client.apk` when running in Docker.
+The APK will be available at `http://localhost:8082/client.apk` when running in Docker.
 
 ## 📖 API Documentation
 

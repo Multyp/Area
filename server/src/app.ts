@@ -8,7 +8,7 @@ import { createAllServices } from './services_creator/creator';
 config();
 
 const app: Express = express();
-const port: number = 8080;
+const port: number = 8081;
 
 app.use(express.json());
 app.use(cookieParser());

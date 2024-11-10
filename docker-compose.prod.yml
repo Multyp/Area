@@ -23,7 +23,7 @@ services:
       dockerfile: Dockerfile.prod
     restart: always
     ports:
-      - 8080:8080
+      - 8081:8081
     volumes:
       - ./mobile-builds:/app/mobile-builds
     depends_on:
@@ -40,7 +40,7 @@ services:
     volumes:
       - shared_volume:/app/public/mobile
     ports:
-      - 8081:8081
+      - 8082:8082
     networks:
       - mynet
 

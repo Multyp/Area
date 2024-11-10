@@ -6,11 +6,7 @@ import { useQuery } from '@tanstack/react-query';
 export default function useUser() {
   const token = useToken();
 
-  if (!token) {
-    return null;
-  }
-
-  const { data, error } = useQuery({
+  const { data, error, isError } = useQuery({
     queryKey: ['user', token],
     queryFn: async () => {
       const response = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/profile`, {
@@ -18,9 +14,10 @@ export default function useUser() {
       });
       return response.data;
     },
+    enabled: !!token,
   });
 
-  if (error) {
+  if (isError) {
     console.error('Error fetching user:', error);
   }
 

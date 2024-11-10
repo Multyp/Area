@@ -16,7 +16,7 @@ if (!apiBaseUrl || !developerUuid || !developerSecret) {
 let ws: WebSocket;
 
 async function connectWebSocket() {
-  ws = new WebSocket(`wss://myarea.tech/dev/gateway?developer_uuid=${developerUuid}&developer_secret=${developerSecret}`);
+  ws = new WebSocket(`wss://rooters-area.com/dev/gateway?developer_uuid=${developerUuid}&developer_secret=${developerSecret}`);
 
   ws.on('open', () => {
     console.log(`Connected to WebSocket server as developer_uuid: ${developerUuid}`);

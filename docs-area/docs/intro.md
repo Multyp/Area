@@ -217,9 +217,9 @@ You will have to make a docker-compose.yml file at the root of your project, whi
 
 This file must include at least the following three docker services:
 
-- A server service to launch the application server on port 8080
+- A server service to launch the application server on port 8081
 - A client_mobile service to build the mobile client
-- A client_web service to launch the web client on port 8081
+- A client_web service to launch the web client on port 8082
 
 > The client_web depends on client_mobile AND server. For more information, see the documentation about depends_on
 
@@ -231,11 +231,11 @@ The following points should be respected:
 
 - The services client_mobile and client_web will share a common volume
 - The client_mobile service will edit the associated binary and put it on the common volume with the client_web
-- The server service will run by exposing port 8080
-- The server service will respond to the request http://localhost:8080/about.json (see File about.json)
-- The client_web service will run by exposing port 8081
-- The client_web service will respond to http://localhost:8081/client.apk to provide the Android version of mobile client
+- The server service will run by exposing port 8081
+- The server service will respond to the request http://localhost:8081/about.json (see File about.json)
+- The client_web service will run by exposing port 8082
+- The client_web service will respond to http://localhost:8082/client.apk to provide the Android version of mobile client
 
 ## File about.json
 
-The **application server** should answer the call http://localhost:8080/about.json
+The **application server** should answer the call http://localhost:8081/about.json

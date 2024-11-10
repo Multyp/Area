@@ -1,6 +1,6 @@
 import { Applet } from '../../types/applet';
-import { OutputResult } from '@/types/service_reaction';
-import { ActionData } from '@/types/action_data';
+import { OutputResult } from '../../types/service_reaction';
+import { ActionData } from '../../types/action_data';
 
 export const applet: Applet = {
   name: 'calendar_notify_discord',

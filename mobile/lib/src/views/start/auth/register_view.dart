@@ -81,7 +81,7 @@ class RegisterViewState extends State<RegisterView>
         return;
       }
 
-      const url = 'https://myarea.tech/api/auth/register';
+      const url = 'https://rooters-area.com/api/auth/register';
       final Map<String, String> headers = {'Content-Type': 'application/json'};
       final Map<String, String> body = {
         'email': _email,

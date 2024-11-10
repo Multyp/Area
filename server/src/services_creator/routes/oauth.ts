@@ -8,7 +8,7 @@ import jwt, { JwtPayload } from 'jsonwebtoken';
 import { AuthorizationRequest, TokenRequest, UserIdRequest } from '../../types/service_oauth';
 import { pool } from '../../utils/db';
 import { createAllServices } from '../creator';
-import { verifyToken } from '@/utils/verify_token';
+import { verifyToken } from '../../utils/verify_token';
 
 const unauthorizedPath = '/login/oauth/unauthorized';
 

@@ -46,7 +46,7 @@ class EnablePrebuiltAppletViewState extends State<EnablePrebuiltAppletView> {
 
     try {
       var statusResponse = await http.post(
-        Uri.parse('https://myarea.tech/api/applets/${widget.appletName}'),
+        Uri.parse('https://rooters-area.com/api/applets/${widget.appletName}'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -64,7 +64,7 @@ class EnablePrebuiltAppletViewState extends State<EnablePrebuiltAppletView> {
       }
 
       var response = await http.get(
-        Uri.parse('https://myarea.tech/api/explore'),
+        Uri.parse('https://rooters-area.com/api/explore'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -133,7 +133,7 @@ class EnablePrebuiltAppletViewState extends State<EnablePrebuiltAppletView> {
 
     try {
       var response = await http.post(
-        Uri.parse('https://myarea.tech/api/connections/${widget.appletName}'),
+        Uri.parse('https://rooters-area.com/api/connections/${widget.appletName}'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -180,7 +180,7 @@ class EnablePrebuiltAppletViewState extends State<EnablePrebuiltAppletView> {
 
       var response = await http.post(
         Uri.parse(
-            'https://myarea.tech/api/applets/${widget.appletName}/enable'),
+            'https://rooters-area.com/api/applets/${widget.appletName}/enable'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -229,7 +229,7 @@ class EnablePrebuiltAppletViewState extends State<EnablePrebuiltAppletView> {
 
       var response = await http.post(
         Uri.parse(
-            'https://myarea.tech/api/applets/${widget.appletName}/disable'),
+            'https://rooters-area.com/api/applets/${widget.appletName}/disable'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',

@@ -72,7 +72,7 @@ class _ServiceDetailsViewState extends State<ServiceDetailsView> {
 
       if (token != null) {
         final response = await http.post(
-          Uri.parse('https://myarea.tech/api/connections'),
+          Uri.parse('https://rooters-area.com/api/connections'),
           headers: {'Content-Type': 'application/json'},
           body: json.encode({'token': token}),
         );

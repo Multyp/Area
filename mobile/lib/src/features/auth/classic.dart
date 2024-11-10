@@ -9,7 +9,7 @@ class AuthService {
     };
 
     final response = await http.post(
-      Uri.parse('https://myarea.tech/api/auth/login'),
+      Uri.parse('https://rooters-area.com/api/auth/login'),
       headers: {'Content-Type': 'application/json'},
       body: json.encode(loginData),
     );

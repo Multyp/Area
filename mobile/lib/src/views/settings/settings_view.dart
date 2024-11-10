@@ -208,14 +208,14 @@ class _SettingsViewState extends State<SettingsView> {
   }
 
   Future<void> _openHelpCenter() async {
-    final Uri url = Uri.parse('https://myarea.tech/faq');
+    final Uri url = Uri.parse('https://rooters-area.com/faq');
     if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
       _showErrorMessage('Could not open the help center page');
     }
   }
 
   Future<void> _openContactUs() async {
-    final Uri url = Uri.parse('https://myarea.tech/about/contact');
+    final Uri url = Uri.parse('https://rooters-area.com/about/contact');
     if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
       _showErrorMessage('Could not open the contact page');
     }
