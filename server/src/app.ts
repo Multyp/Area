@@ -7,6 +7,7 @@ import servicesRoutes from './services_creator/routes';
 import { createAllServices } from './services_creator/creator';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsDoc from 'swagger-jsdoc';
+import path from 'path';
 
 config();
 
@@ -28,7 +29,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ['./src/services_creator/routes/*.ts'],
+  apis: ['src/services_creator/routes/*.ts'],
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
