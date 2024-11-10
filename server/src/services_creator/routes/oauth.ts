@@ -14,6 +14,27 @@ const unauthorizedPath = '/login/oauth/unauthorized';
 
 const routes: Router = Router();
 
+/**
+ * @swagger
+ * /api/oauth/{service_name}/authorize:
+ *   get:
+ *     summary: Initiates OAuth authorization for a specified service
+ *     tags: [OAuth]
+ *     parameters:
+ *       - in: path
+ *         name: service_name
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The name of the OAuth service (e.g., Google, Discord)
+ *     responses:
+ *       302:
+ *         description: Redirects to the authorization URL of the OAuth service
+ *       404:
+ *         description: Service not found
+ *       500:
+ *         description: Internal server error
+ */
 routes.get('/api/oauth/:service_name/authorize', async (request: Request, response: Response) => {
   const services = await createAllServices();
   if (!services) {
@@ -58,6 +79,48 @@ routes.get('/api/oauth/:service_name/authorize', async (request: Request, respon
 
 const encodeFormURL = (x: { [key: string]: string }) => Object.keys(x).reduce((p, c) => p + `&${c}=${encodeURIComponent(x[c])}`, '');
 
+/**
+ * @swagger
+ * /api/oauth/{service_name}/callback:
+ *   get:
+ *     summary: Handles OAuth callback and processes authorization code
+ *     tags: [OAuth]
+ *     parameters:
+ *       - in: path
+ *         name: service_name
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The name of the OAuth service (e.g., Google, Discord)
+ *       - in: query
+ *         name: code
+ *         schema:
+ *           type: string
+ *         description: The authorization code from the OAuth service
+ *       - in: query
+ *         name: mobile
+ *         schema:
+ *           type: boolean
+ *         description: If true, handles the callback as a mobile response
+ *       - in: query
+ *         name: token
+ *         schema:
+ *           type: string
+ *         description: JWT token for existing user verification
+ *     responses:
+ *       200:
+ *         description: User authenticated successfully
+ *       302:
+ *         description: Redirects to a URL for unauthorized access or on success
+ *       400:
+ *         description: Bad request, missing parameters
+ *       401:
+ *         description: Unauthorized access
+ *       404:
+ *         description: Service not found
+ *       500:
+ *         description: Internal server error
+ */
 routes.get('/api/oauth/:service_name/callback', async (request: Request, response: Response) => {
   const services = await createAllServices();
   if (!services) {
@@ -265,6 +328,56 @@ routes.get('/api/oauth/:service_name/callback', async (request: Request, respons
   }
 });
 
+/**
+ * @swagger
+ * /api/profile:
+ *   post:
+ *     summary: Fetches user profile details
+ *     tags: [OAuth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               token:
+ *                 type: string
+ *                 description: JWT token for authentication
+ *     responses:
+ *       200:
+ *         description: Profile retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 profile:
+ *                   type: object
+ *                   properties:
+ *                     id:
+ *                       type: integer
+ *                     created_at:
+ *                       type: string
+ *                       format: date-time
+ *                     services:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           service_name:
+ *                             type: string
+ *                           service_email:
+ *                             type: string
+ *       401:
+ *         description: Unauthorized, invalid token
+ *       404:
+ *         description: User not found
+ *       500:
+ *         description: Internal server error
+ */
 routes.post('/api/profile', async (request: Request, response: Response) => {
   const { token } = request.body;
   const userId: number | undefined = await verifyToken(token);
