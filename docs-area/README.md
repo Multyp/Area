@@ -56,7 +56,7 @@ make start_serv
 make update_website
 ```
 
-The documentation will be available at `http://localhost:3042`.
+The documentation will be available at `http://localhost:8084`.
 
 ## Project Structure
 

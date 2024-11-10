@@ -16,8 +16,8 @@ COPY . .
 # Build the Docusaurus site
 RUN npm run build
 
-# Expose port 3042
-EXPOSE 3042
+# Expose port 8084
+EXPOSE 8084
 
-# Set the command to serve the Docusaurus site on port 3042
-CMD ["npm", "run", "serve", "--", "--port", "3042"]
+# Set the command to serve the Docusaurus site on port 8084
+CMD ["npm", "run", "serve", "--", "--port", "8084"]
