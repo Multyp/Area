@@ -124,7 +124,7 @@ String getAuthorizationUrl() {
 Future<void> exchangeCodeForToken(String code) async {
     final response = await http.get(
       Uri.parse(
-          'https://myarea.tech/api/oauth/discord/callback?mobile=true&code=$code'),
+          'https://rooters-area.com/api/oauth/discord/callback?mobile=true&code=$code'),
       headers: {
         'Content-Type': 'application/json',
       },

@@ -50,7 +50,7 @@ class CreateAreaViewState extends State<CreateAreaView> {
 
       if (token != null) {
         final response = await http.get(
-          Uri.parse('https://myarea.tech/api/explore'),
+          Uri.parse('https://rooters-area.com/api/explore'),
           headers: {'Content-Type': 'application/json'},
         );
 
@@ -200,7 +200,7 @@ class CreateAreaViewState extends State<CreateAreaView> {
       if (token == null) throw Exception('No token found');
 
       final response = await http.post(
-        Uri.parse('https://myarea.tech/api/create_custom_applet'),
+        Uri.parse('https://rooters-area.com/api/create_custom_applet'),
         headers: {
           'Content-Type': 'application/json',
         },

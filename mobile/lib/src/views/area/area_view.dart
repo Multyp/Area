@@ -54,7 +54,7 @@ class _AreaContentState extends State<AreaContent>
       if (token == null) return;
 
       final response = await http.get(
-        Uri.parse('https://myarea.tech/api/explore'),
+        Uri.parse('https://rooters-area.com/api/explore'),
         headers: {'Content-Type': 'application/json'},
       );
 
@@ -136,7 +136,7 @@ class _AreaContentState extends State<AreaContent>
 
                           final response = await http.post(
                             Uri.parse(
-                                'https://myarea.tech/api/applets/${applet['name']}/enable'),
+                                'https://rooters-area.com/api/applets/${applet['name']}/enable'),
                             headers: {
                               'Content-Type': 'application/json',
                               'Authorization': 'Bearer $token',

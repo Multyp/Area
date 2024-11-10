@@ -32,7 +32,7 @@ async function subscribeWebhook(provided_id: string, type: string, reaction_name
       condition,
       transport: {
         method: 'webhook',
-        callback: `https://myarea.tech${developer_uuid ? `/dev/${developer_uuid}` : ''}/api/webhook/twitch/${reaction_name}`,
+        callback: `https://rooters-area.com${developer_uuid ? `/dev/${developer_uuid}` : ''}/api/webhook/twitch/${reaction_name}`,
         secret: webhook_secret,
       },
     },
