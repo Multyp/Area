@@ -24,7 +24,7 @@ RUN npm install
 RUN npm run build
 
 # Exposer le port que l'application va utiliser
-EXPOSE 8081
+EXPOSE 8082
 
 # Démarrer l'application
 CMD ["npm", "run", "start"]

@@ -5,7 +5,7 @@ import { Router, Request, Response } from 'express';
 import { getUserConnections } from '../../utils/get_user_connections';
 import { verifyToken } from '../../utils/verify_token';
 import { createAllApplets } from '../creator';
-import { Applet, Applets } from '@/types/applet';
+import { Applet, Applets } from '../../types/applet';
 
 const routes: Router = Router();
 

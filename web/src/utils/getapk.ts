@@ -1,7 +1,7 @@
 'use client';
 
 export default function getAPK() {
-  const apkUrl = '/mobile/client.apk';
+  const apkUrl = '/client.apk';
   const fileName = 'area.apk';
   const a = document.createElement('a');
 

@@ -141,18 +141,18 @@ docker-compose up
 ```
 
 Services:
-- Application server: `http://localhost:8080`
-- Web client: `http://localhost:8081`
+- Application server: `http://localhost:8081`
+- Web client: `http://localhost:8082`
 - Mobile client build process
 
 ## API Integration
 
-- **Server Endpoint:** `http://localhost:8080/about.json`
+- **Server Endpoint:** `http://localhost:8081/about.json`
   - Provides service configurations
   - Action/reaction mappings
   - Authentication endpoints
 
-- **Client Download:** `http://localhost:8081/client.apk`
+- **Client Download:** `http://localhost:8082/client.apk`
   - Latest Android APK build
   - Automated CI/CD deployment
 

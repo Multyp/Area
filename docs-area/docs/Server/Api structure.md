@@ -55,7 +55,7 @@ import { createAllServices } from './services_creator/creator';
 config();
 
 const app: Express = express();
-const port: number = 8080;
+const port: number = 8081;
 
 app.use(express.json());
 app.use(cookieParser());
@@ -557,7 +557,7 @@ COPY ./tsconfig.json ./
 
 RUN npm install
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD [ "npm", "run", "dev" ]
 
@@ -583,7 +583,7 @@ COPY ./src ./src
 
 RUN npm run build
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD [ "npm", "run", "start" ]
 

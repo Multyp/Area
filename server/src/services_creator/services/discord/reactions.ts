@@ -1,4 +1,4 @@
-import { ActionData } from '@/types/action_data';
+import { ActionData } from '../../../types/action_data';
 import { OutputParams, ServiceReaction } from '../../../types/service_reaction';
 import { pool } from '../../../utils/db';
 import axios from 'axios';

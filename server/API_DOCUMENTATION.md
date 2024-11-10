@@ -61,7 +61,7 @@ export const serviceOAuth: ServiceOAuth = {
 };
 ```
 
-5. Test your route in your browser: http://localhost:8080/api/oauth/[SERVICE_NAME_HERE]/authorize by clicking "authorize".
+5. Test your route in your browser: http://localhost:8081/api/oauth/[SERVICE_NAME_HERE]/authorize by clicking "authorize".
 
 6. Check that the data are successfully inserted in the database: `psql -U root -d mydb -h 127.0.0.1 -p 5432`.
 
