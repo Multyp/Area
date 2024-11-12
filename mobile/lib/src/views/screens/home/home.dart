@@ -1,16 +1,11 @@
-import 'package:area/src/views/area/area_view.dart';
-import 'package:area/src/widgets/layout/themed_scaffold.dart';
+import 'package:area/src/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:area/src/views/profile/profile_view.dart';
-import 'package:area/src/views/settings/settings_view.dart';
-import 'package:area/src/widgets/layout/bottom_bar.dart';
-import 'package:area/src/theme/app_theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   final Function(ThemeMode) onThemeChanged;
   final ThemeMode currentTheme;
   final Function(String) onLanguageChanged;
@@ -25,43 +20,11 @@ class HomePage extends StatefulWidget {
   });
 
   @override
-  HomePageState createState() => HomePageState();
-}
-
-class HomePageState extends State<HomePage> {
-  int _currentIndex = 0;
-
-  @override
   Widget build(BuildContext context) {
-    return ThemedScaffold(
-      body: _buildContent(),
-      bottomNavigationBar: CustomBottomNavigationBar(
-        currentIndex: _currentIndex,
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-      ),
-    );
+    return _buildHomeContent(context);
   }
 
-  Widget _buildContent() {
-    switch (_currentIndex) {
-      case 0:
-        return _buildHomeContent();
-      case 1:
-        return _buildAreaContent();
-      case 2:
-        return _buildProfileContent();
-      case 3:
-        return _buildSettingsContent();
-      default:
-        return _buildHomeContent();
-    }
-  }
-
-  Widget _buildHomeContent() {
+  Widget _buildHomeContent(BuildContext context) {
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -219,9 +182,8 @@ class HomePageState extends State<HomePage> {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                setState(() {
-                  _currentIndex = 1;
-                });
+                // Navigate to the area screen
+                Navigator.pushNamed(context, '/area');
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
@@ -253,23 +215,6 @@ class HomePageState extends State<HomePage> {
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildAreaContent() {
-    return const AreaContent();
-  }
-
-  Widget _buildProfileContent() {
-    return const ProfileView();
-  }
-
-  Widget _buildSettingsContent() {
-    return SettingsView(
-      currentTheme: widget.currentTheme,
-      onThemeChanged: widget.onThemeChanged,
-      currentLocale: widget.currentLocale,
-      onLanguageChanged: widget.onLanguageChanged,
     );
   }
 }

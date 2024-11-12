@@ -1,8 +1,8 @@
+import 'package:area/src/views/screens/screen_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:area/src/views/home/home.dart';
 import 'package:area/src/views/start/languages_selection_view.dart';
 import 'package:area/src/views/start/welcome_view.dart';
 
@@ -132,7 +132,7 @@ class AppWidget extends StatelessWidget {
               onLanguageChanged: onLanguageChanged,
             ),
         'com.area:/': (context) => const WelcomeView(),
-        '/home': (context) => HomePage(
+        '/home': (context) => ScreenManager(
               onThemeChanged: onThemeChanged,
               currentTheme: themeMode,
               onLanguageChanged: onLanguageChanged,

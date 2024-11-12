@@ -14,9 +14,9 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:area/src/services/storage_service.dart';
 import 'package:area/src/widgets/area/configuration_modal.dart';
-import 'package:area/src/views/area/create_area_view.dart';
+import 'package:area/src/views/screens/area/create_area_view.dart';
 import 'dart:developer' as developer;
-import 'package:area/src/views/area/enable_prebuilt_applet_view.dart';
+import 'package:area/src/views/screens/area/enable_prebuilt_applet_view.dart';
 
 class AreaContent extends StatefulWidget {
   const AreaContent({
