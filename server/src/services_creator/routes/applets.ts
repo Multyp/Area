@@ -262,6 +262,60 @@ routes.post('/api/applets/:applet_name', async (request: Request, response: Resp
   return response.status(200).json(result);
 });
 
+/**
+ * Inserts a new custom applet into the database and returns the inserted applet's ID.
+ *
+ * @swagger
+ * /api/create_custom_applet:
+ *   post:
+ *     summary: Create a new custom applet
+ *     tags: [Applets]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *               user_id:
+ *                 type: integer
+ *               action_service_name:
+ *                 type: string
+ *               action_name:
+ *                 type: string
+ *               action_params:
+ *                 type: object
+ *               reaction_service_name:
+ *                 type: string
+ *               reaction_name:
+ *                 type: string
+ *               reaction_params:
+ *                 type: object
+ *     responses:
+ *       200:
+ *         description: The ID of the newly created custom applet
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 id:
+ *                   type: integer
+ *
+ * @param {string} name - The name of the custom applet.
+ * @param {number} userId - The ID of the user creating the applet.
+ * @param {object} action - The action details of the applet.
+ * @param {string} action.service_name - The name of the action service.
+ * @param {string} action.name - The name of the action.
+ * @param {object} [action.params] - The parameters for the action.
+ * @param {object} reaction - The reaction details of the applet.
+ * @param {string} reaction.service_name - The name of the reaction service.
+ * @param {string} reaction.name - The name of the reaction.
+ * @param {object} [reaction.fields] - The parameters for the reaction.
+ * @returns {Promise<{ id: number }>} The ID of the newly created custom applet.
+ */
 routes.post('/api/create_custom_applet', validateBody(actionReactionSchema), async (request: Request, response: Response) => {
   const { token, name, action, reaction } = request.body;
 

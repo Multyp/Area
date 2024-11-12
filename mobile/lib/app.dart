@@ -34,11 +34,21 @@ class MyAppState extends State<MyApp> {
   late Locale _locale; // Current locale
 
   @override
+  @override
   void initState() {
     super.initState();
     _themeMode = widget.initialThemeMode; // Initialize theme mode
     _locale = widget.initialLocale; // Initialize locale
-    _updateSystemUI(); // Initialize system UI appearance
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _updateSystemUI(); // Delayed execution to avoid context issues
+    });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _updateSystemUI(); // Safe to call here, as context is fully available
   }
 
   /// Updates the system UI elements to match the current theme.
